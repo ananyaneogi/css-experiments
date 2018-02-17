@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quote</title>
+    <meta name="author" content="Ananya Neogi">
+    <style>
+      html {
+        height: 100%;
+      }
+      body{
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Helvetica, Verdana, sans-serif;
+      }
+      header {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        background: #f0eaf6;
+        padding: 1rem 5vw 1rem;
+      }
+      header .header-wrapper{
+        width: 60vw;
+        display: grid;
+        margin: auto;
+        grid-template-columns: auto 1fr 1fr 1fr 0.5fr;
+        grid-template-rows: auto 1fr 1fr auto auto;
+        grid-gap: 1rem;
+      }
+      h1 {
+        grid-column: 1 / 4;
+        text-align: right;
+        font-size: calc(1.1rem + 1.6vw);
+        color: rgba(0, 0, 0, 0.8);
+        text-transform: uppercase;
+        margin: 0;
+        letter-spacing: 1.2px;
+      }
+      h2 {
+        color: #d69f9d;
+        font-size: calc(3rem + 2vw);
+        letter-spacing: 10px;
+        grid-column: 3 / 4;
+        grid-row: 2 / 5;
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: vertical-rl;
+        justify-self: end;
+        margin: 0;
+        margin-top: -10px;
+        margin-right: -10px;
+        text-transform: uppercase;
+      }
+      .extra {
+        grid-column: 1 / 3;
+        grid-row: 4 / span 2;
+        align-self: end;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-top: 5px solid rgba(12, 12, 10, 0.8);
+        border-bottom: 5px solid rgba(12, 12, 10, 0.8);
+
+      }
+      li {
+        text-align: left;
+        padding: 2px 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgba(12, 12, 10, 0.8);
+        font-size: 1.1rem;
+      }
+
+      .more-lines{
+        border-top: 5px solid rgba(12, 12, 10, 0.8);
+        border-bottom: 5px solid rgba(12, 12, 10, 0.8);
+        grid-row: 3;
+        grid-column: 4 / 6;
+        align-self: end;
+      }
+      .solid-line {
+        grid-column: 3 / 6;
+        grid-row: 5;
+        height: 25px;
+        align-self: start;
+        justify-content: end;
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M21.184 20c.357-.13.72-.264 1.088-.402l1.768-.661C33.64 15.347 39.647 14 50 14c10.271 0 15.362 1.222 24.629 4.928.955.383 1.869.74 2.75 1.072h6.225c-2.51-.73-5.139-1.691-8.233-2.928C65.888 13.278 60.562 12 50 12c-10.626 0-16.855 1.397-26.66 5.063l-1.767.662c-2.475.923-4.66 1.674-6.724 2.275h6.335zm0-20C13.258 2.892 8.077 4 0 4V2c5.744 0 9.951-.574 14.85-2h6.334zM77.38 0C85.239 2.966 90.502 4 100 4V2c-6.842 0-11.386-.542-16.396-2h-6.225zM0 14c8.44 0 13.718-1.21 22.272-4.402l1.768-.661C33.64 5.347 39.647 4 50 4c10.271 0 15.362 1.222 24.629 4.928C84.112 12.722 89.438 14 100 14v-2c-10.271 0-15.362-1.222-24.629-4.928C65.888 3.278 60.562 2 50 2 39.374 2 33.145 3.397 23.34 7.063l-1.767.662C13.223 10.84 8.163 12 0 12v2z' fill='%23d69f9d' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="header-wrapper">
+        <h1>Life is just a series of</h1>
+        <h2>Choices</h2>
+        <div class="extra">
+          <ul>
+            <li>MAKE</li>
+            <li>GOOD</li>
+            <li>ONES.</li>
+          </ul>
+        </div>
+        <b class="solid-line"></b>
+        <p class="more-lines">&nbsp;</p>
+      </div>
+    </header>
+  </body>
+</html>

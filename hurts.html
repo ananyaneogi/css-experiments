@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Yes, of course it hurts</title>
+    <meta name="author" content="Ananya Neogi">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box;
+      }
+      body {
+        background: #E6E7E1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        -webkit-font-smoothing: antialiased;
+      }
+      main {
+        max-width: 60vw;
+        margin:0 auto;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      h1 {
+        font-size: 200px;
+        font-family: 'Bitter', sans-serif;
+        font-weight: normal;
+        color: rgba(0,0,0,0.8);
+        margin: 0;
+        align-self: center;
+        letter-spacing: 1px;
+        line-height: 1;
+      }
+      .yes {
+        grid-row: 1;
+        grid-column: 1;
+      }
+      .of {
+        grid-row: 2;
+        grid-column: 1;
+      }
+      .course {
+        grid-row: 3;
+        grid-column: 1 / 5;
+        align-self: baseline;
+      }
+      .it {
+        grid-row: 4;
+        grid-column: 4;
+        text-align: right;
+        align-self: baseline;
+      }
+      .hurts {
+        grid-row: 5;
+        grid-column: 1 / 5;
+        text-align: right;
+        align-self: baseline;
+      }
+      .poem {
+        grid-row: 1 / 3;
+        grid-column: 3 / 5;
+        padding-top: 50px;
+        align-self: end;
+      }
+      .poem p{
+        margin-bottom: 30px;
+        font-family: Georgia, serif;
+        color: #131313;
+        font-size: 14px;
+        line-height: 1.2;
+        line-height: 1.2;
+        max-width: 220px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+      }
+      .poem p:last-child {
+        margin-bottom: 0;
+      }
+      b {
+        margin-top: 10px;
+        display: block;
+      }
+      .right {
+        text-align: right;
+        display: block;
+      }
+      a {
+        text-decoration: none;
+        background: yellow;
+        color: inherit;
+      }
+      /* .marks {
+        background: yellow;
+        width: 100px;
+        height: 20px;
+        margin-top: -20px;
+        float: right;
+        display: block;
+      } */
+      .credits {
+        grid-row: 4;
+        grid-column: 1 / 3;
+        margin-top: 30px;
+        font-style: italic;
+        font-size: 14px;
+      }
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 100px;
+        }
+        .poem {
+          grid-row: 1 / -1;
+        }
+        .it {
+          grid-column: 1;
+          text-align: left;
+        }
+        .hurts{
+          grid-column:  5;
+          text-align: left;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1 class="yes">Yes,</h1>
+      <h1 class="of">of</h1>
+      <h1 class="course">course</h1>
+      <h1 class="it">it</h1>
+      <h1 class="hurts">hurts <div class="marks"></div></h1>
+      <div class="poem">
+        <p class="stanza-o">Yes, of course it hurts when buds are breaking.
+        Why else would the springtime falter?
+        Why would all our ardent longing
+        bind itself in frozen, bitter pallor?
+        After all, the bud was covered all the winter.
+        What new thing is it that bursts and wears?
+        Yes, of course it hurts when buds are breaking,
+        hurts for that which grows<br/><span class="right">and that which bars.</span></p>
+        <p class="stanza-t">Yes, it is hard when drops are falling.
+        Trembling with fear, and heavy hanging,
+        cleaving to the twig, and swelling, sliding -
+        weight draws them down, though they go on clinging.
+        Hard to be uncertain, afraid and divided,
+        hard to feel the depths attract and call,
+        yet sit fast and merely tremble -
+        hard to want to stay<br/><span class="right">and want to fall.</span></p>
+        <p class="stanza-th">Then, when things are worst and nothing helps
+        the tree's buds break as in rejoicing,
+        then, when no fear holds back any longer,
+        down in glitter go the twig's drops plunging,
+        forget that they were frightened by the new,
+        forget their fear before the flight unfurled -
+        feel for a second their greatest safety,
+        rest in that trust<br/><span class="right">that creates the world.</span>
+        <b>&mdash;Karen Boye</b>
+        </p>
+      </div>
+      <div class="credits">With compliments to the Karin Boye Society<br/><a href="http://nifty50.sociodesign.co.uk/bidding/56/bvd/yes-of-course-it-hurts">Here</a> is the design inspiration.</div>
+    </main>
+  </body>
+</html>
