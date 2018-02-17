@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Graphic Design with CSS</title>
+    <meta name="viewport" content="width=device-width, minimumscale=1.0">
+    <meta name="description" content="Graphic Design with CSS">
+    <meta name="author" content="Ananya Neogi">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700" rel="stylesheet">
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          -webkit-box-sizing: border-box;
+                  box-sizing: border-box;
+          -webkit-font-smoothing: antialiased;
+        font-family: 'Roboto Mono',monospace;
+        }
+      header {
+        padding: 60px 120px;
+        background: #97C3BC;
+      }
+      .title-wrapper {
+        display: flex;
+        max-width: 88%;
+        margin: 0 auto;
+        border: 10px solid #000;
+        height: 240px;
+        align-items: center;
+      }
+      .title {
+        flex: 1;
+        padding: 60px;
+      }
+      .title h1 {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.1;
+        max-width: 300px;
+        margin: 0 auto;
+        letter-spacing: -2px;
+      }
+      .pattern {
+        height: 100%;
+        flex: 2;
+        border-right: 10px solid #000;
+        background-color: #97c3bc;
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='12' viewBox='0 0 40 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 6.172L6.172 0h5.656L0 11.828V6.172zm40 5.656L28.172 0h5.656L40 6.172v5.656zM6.172 12l12-12h3.656l12 12h-5.656L20 3.828 11.828 12H6.172zm12 0L20 10.172 21.828 12h-3.656z' fill='%23000000' fill-opacity='1' fill-rule='evenodd'/%3E%3C/svg%3E");
+      }
+
+      .description {
+        margin-top: 60px;
+        font-size: 24px;
+        line-height: 40px;
+        max-width: 610px;
+        margin-left: 80px;
+        text-align: justify;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 60px;
+        max-width: 88%;
+        margin: 120px auto;
+        align-items: center;
+        margin-bottom: 200px;
+      }
+
+      .grid-card {
+        border: 10px solid #000;
+        box-shadow: 0.5rem 0.5rem #97c3bc;
+        max-height: 240px;
+        background: #ccc;
+        overflow: hidden;
+      }
+
+      .grid-card img {
+        width: 100%;
+        object-fit: cover;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 16px;
+        padding: 20px;
+        background: #fbfbfb;
+      }
+
+      footer a{
+        color: #fff;
+        background: #000;
+        text-decoration: none;
+        line-height: 1px;
+        padding: 2px 6px 4px
+      }
+
+      footer a:hover {
+        background: #97C3BC;
+        color: #000;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          padding: 60px;
+        }
+        .title-wrapper {
+          max-width: 100%;
+        }
+        .title {
+          padding: 20px;
+        }
+        .title h1 {
+          font-size: 30px;
+        }
+        .description {
+          font-size: 18px;
+          line-height: 30px;
+          max-width: 100%;
+          margin-left: 0px;
+          text-align: left;
+        }
+        .grid-container {
+          display: block;
+        }
+        .grid-card {
+          margin-bottom: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="title-wrapper">
+        <div class="pattern"></div>
+        <div class="title">
+          <h1>GRAPHIC DESIGN</br>WITH CSS</h1>
+        </div>
+      </div>
+      <div class="description">Experiments with CSS layouts and other CSS properties to create visuals that explore the possibilities of graphic design with code. The inspirations are taken from various realms of graphic design.</div>
+    </header>
+    <main>
+      <div class="grid-container">
+        <a href="quote.html">
+          <div class="grid-card">
+            <img src="assets/quote.jpg" alt="quote thumbnail">
+          </div>
+        </a>
+        <a href="hurts.html">
+          <div class="grid-card">
+            <img src="assets/hurts.png" alt="poem thumbnail">
+          </div>
+        </a>
+        <a href="futurismo.html">
+          <div class="grid-card">
+            <img src="assets/futurism.png" alt="poem thumbnail">
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer>Created by <a href="http://ananyaneogi.com">Ananya</a></footer>
+  </body>
+</html>
